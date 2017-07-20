@@ -1,0 +1,67 @@
+#!/bin/bash
+
+mkdir TopDir
+echo "created Top Dir"
+cd TopDir
+echo "created TopDir/BottomDir"
+mkdir BottomDir
+cd BottomDir
+echo "current directory is TopDir/BottomDir"
+
+for i in `seq 2 20`
+do
+	echo "created file"$i
+	d=$(($i+1))
+	if [ $i -eq 20 ]
+	then
+		echo "My name is File"$i>>File$i
+		echo "No Next File">>File$i
+		echo "File"$i":"
+		echo "My name is File"$i
+		echo "No Next File"
+		echo "- - - - - - - - - - - - - - - - - -"
+	else
+		echo "My name is File"$i>>File$i
+		echo "Next file's name will be File"$d>>File$i
+		echo "File"$i
+		echo "My name is File"$i
+		echo "Next file's name will be File"$d
+		echo "- - - - - - - - - - - - - - - - - -"
+	fi
+	 
+done
+
+files=`ls File*`
+for f in $files
+do
+	x=`grep '0\|2\|3' $f`
+	if [ -n "$x" ]
+	then
+		mv $f ../$f
+	fi
+done
+#do
+#	if [[ $i  == *"0"* ]];
+#	then
+#		mv File$i ../File$i
+#	elif [[ $i == *"2"* ]];
+#	then
+#		mv File$i ../File$i
+#	elif [[ $i == *""3* ]];
+#	then
+#		mv File$i ../File$i
+#	else
+#		d=1
+#	fi
+#done
+
+cd TopDir
+
+dsi=ls
+
+cd BottomDir
+
+dsi2=ls
+
+echo $dsi
+echo $dsi2
