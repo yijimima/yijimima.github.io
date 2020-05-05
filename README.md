@@ -1,1 +1,0 @@
-# yijimima.github.io

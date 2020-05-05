@@ -1,190 +1,29 @@
-*{
-  margin: 0;
-  padding: 0;
-  font-family: 'VT323', monospace;
-}
+/* styles.css */
 
+html,
 body{
-  height: auto;
-  background: gray;
-  background: -webkit-linear-gradient(to bottom,rgba(0, 102, 255, 0.7),rgba(204, 255, 51, 0.7));
-  background: -moz-linear-gradient(to bottom,rgba(0, 102, 255, 0.7),rgba(204, 255, 51, 0.7));
-  background: -o-linear-gradient(to bottom,rgba(0, 102, 255, 0.7),rgba(204, 255, 51, 0.7));
-  background: linear-gradient(to bottom,rgba(0, 102, 255, 0.7),rgba(204, 255, 51, 0.7));
-}
-strong{
-  font-style: bold;
-}
-small{
-  opacity: 1;
-  color: white;
-  font-size: 18px;
-}
-h2{
-  font-size: 45px;
-}
-.container{
-  width: 995px;
-  margin: 0 auto;
+    height: 100%;
 }
 
-.frame{
-  width: auto;
-  height: 420px;
-  background: rgba(204,255,255,0.7);
-}
-#inside{
-  text-align: center;
-  position: relative;
-}
-#inside img{
-  width: 711px;
-  height: 400px;
-  margin: 10px 0;
-}
-#inside p{
-  width: 350px;
-  font-size: 60px;
-  position: absolute;
-  top: 50px;
-  margin-top: 10px;
-  left: -100px;
-  font-family: 'Monofett', cursive;
-  text-decoration: overline underline;
-  font-style: italic;
-}
-#logo{
-  text-align: center;
-  margin: 10px auto;
-}
-#logo h1{
-  font-family: 'VT323', monospace;
-  font-size: 120px;
-}
-#logo img{
-  height: 200px;
-  width: 225px;
-}
-#logo img:hover{
-  content: url('Project/logo2.gif')
-}
-#inside2{
-  height: 300px;
-  background: url('Project/gabe.jpg') no-repeat;
-  background-position: right bottom;
-  background-size: auto 250px;
+img {
+    max-width: 100%;
 }
 
-#intro{
-  margin: 25px;
+
+/* cover */
+#cover  {
+    background: #222 url('img/kimishima.jpg') center center no-repeat;
+    background-size: cover;
+    color: white;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
 }
 
-#intro p{
-  font-size: 25px;
+#cover-caption{
+    width: 100%;
 }
-
-#intro img{
-  width: 360px;
-  height: 230px;
-  display: inline;
-
-}
-#package{
-  margin: 50px 50px 100px;
-}
-
-#package ul li{
-  display: inline-block;
-  position: relative;
-  width: 324px;
-  height: 200px;
-}
-
-#package ul li p{
-  color: white;
-  font-family: 'Boogaloo', cursive;
-  font-size: 30px;
-  text-align: center;
-}
-#package ul li small{
-  display: block;
-  padding: 5px;
-}
-#l1{
-  background: #3c3;
-  position: relative;
-  top: 36px;
-}
-#l1:hover{
-  background: #29a329;
-  position: relative;
-  top: 36px;
-}
-#l1:active{
-  background:url('Project/meme.png');
-}
-#l2{
-  background: #33c;
-  position: relative;
-  top: 54px;
-}
-#l2:hover{
-  background: #2929a3;
-  position: relative;
-  top: 54px;
-}
-#l2:active{
-  background: url('Project/meme2.png');
-}
-#l3{
-  background: #f93;
-  position: relative;
-  top: 54px;
-}
-
-#l3:hover{
-  background: #ff8000;
-  position: relative;
-  top: 54px;
-}
-#l3:active{
-  background: url('Project/meme3.png');
-}
-#foot{
-  height: 130px;
-  background: url('http://yijimima.com/images/bg-tile-brown.gif') top left repeat;
-}
-#thing{
-  position: relative;
-  position: relative;
-  top: 50%;
-  transform: translateY(60%);
-}
-#thing img{
-  width: 40px;
-  height: 40px;
-  display: inline;
-}
-#thing p{
-  display: inline;
-  font-family: 'Monofett', cursive;
-  color: white;
-  font-size: 40px;
-}
-#contact{
-  margin-bottom: 20px;
-}
-#contact ul li{
-  display: inline-block;
-  list-style-type: none;
-  font-size: 25px;
-  margin:10px 14px;
-}
-#reviews{
-  margin: 40px 0;
-}
-#reviews ul li{
-  list-style-type: none;
-  font-size: 24px;
-  margin: 10px 0;
+#forms{
+    width: 100%;
 }
