@@ -3,6 +3,7 @@
 html,
 body{
     height: 100%;
+    scroll-behavior: smooth;
 }
 
 img {
@@ -24,6 +25,37 @@ img {
 #cover-caption{
     width: 100%;
 }
-#forms{
-    width: 100%;
+
+.carousel-caption h3{
+    color: black;
+}
+
+.carousel-caption p{
+    color: black;
+}
+
+.section-content{
+    padding: 5rem 0;
+}
+
+#about{
+    background: url('img/glowing.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+.about-text{
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 1.875rem;
+}
+
+.btn{
+    color: white;
+}
+
+#footer-main{
+    background: #222;
+    color: white;
+    font-size: 0.8rem;
+    padding: 2.5rem 0;
 }
